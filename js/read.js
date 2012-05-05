@@ -4,10 +4,9 @@
 $('#one').live('pageinit', function () {
     console.log("Page one loaded."); // only runs on the first load unless the page is refreshed.
     // Latest update
-    /*
+
     // Step 1: target our list and empty it http://api.jquery.com/empty/
     $("ul").empty();
-
     // Step 2: Grab list item details from index.html
     $('<li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">3</span></li>' +
         '<li><a href="index.html"><h3>Stephen Weber</h3>' +
@@ -17,7 +16,6 @@ $('#one').live('pageinit', function () {
 
     // Step 3: refresh the listview
     $("ul").listview('refresh');
-    */
 
     // Get localStorage
     $("#storage").on('click', function(){
