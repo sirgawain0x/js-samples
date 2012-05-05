@@ -3,7 +3,7 @@
 
 $('#one').live('pageinit', function () {
     console.log("Page one loaded."); // only runs on the first load unless the page is refreshed.
-
+    // Latest update
     /*
     // Step 1: target our list and empty it http://api.jquery.com/empty/
     $("ul").empty();
