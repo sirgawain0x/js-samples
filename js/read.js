@@ -4,6 +4,7 @@
 $('#one').live('pageinit', function () {
     console.log("Page one loaded."); // only runs on the first load unless the page is refreshed.
 
+    /*
     // Step 1: target our list and empty it http://api.jquery.com/empty/
     $("ul").empty();
 
@@ -16,7 +17,7 @@ $('#one').live('pageinit', function () {
 
     // Step 3: refresh the listview
     $("ul").listview('refresh');
-
+    */
 
     // Get localStorage
     $("#storage").on('click', function(){
@@ -34,18 +35,13 @@ $('#one').live('pageinit', function () {
             makeLink.on('click', function(){
                 console.log("This is my key: "+this.id);
             });
-            //makeSubList.append(makeSubLi).append(makeLink).appendTo("#itemList");
             makeLink.html(makeSubLi);
             makeSubList.append(makeLink).appendTo("#itemList");
-
-            //$("#itemList").trigger('create');
         }; // end for loop
         $("ul").listview('refresh');
     });  // end storage.on
 
 }); // end #one pageinit
-
-
 
 /*
  // transition to page, using data from a form and reloading the page from scratch
@@ -57,6 +53,7 @@ $('#one').live('pageinit', function () {
  });
  };
  */
+
 $('#two').live('pageinit', function () {
     console.log("Page two loaded.");
 }); // end #two pageinit
