@@ -4,7 +4,7 @@
 $('#one').live('pageinit', function () {
     console.log("Page one loaded."); // only runs on the first load unless the page is refreshed.
     // Latest update
-
+    /*
     // Step 1: target our list and empty it http://api.jquery.com/empty/
     $("ul").empty();
     // Step 2: Grab list item details from index.html
@@ -16,7 +16,7 @@ $('#one').live('pageinit', function () {
 
     // Step 3: refresh the listview
     $("ul").listview('refresh');
-
+    */
     // Get localStorage
     $("#storage").on('click', function(){
         $("#itemList").empty();
