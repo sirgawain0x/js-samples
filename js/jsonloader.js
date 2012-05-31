@@ -1,4 +1,4 @@
-$(document).on("#one", "pagebeforecreate", function () {
+$("#one").on("pagebeforecreate", function () {
     localStorage.clear();
     var jsonItems = {
         "items":[
