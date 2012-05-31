@@ -1,7 +1,7 @@
 // Your name
 // Project description
 
-$('#one').live('pageinit', function () {
+$('#one').on('pageinit', function () {
     console.log("Page one loaded."); // only runs on the first load unless the page is refreshed.
 
     // transition to page, using data from a form and reloading the page from scratch
@@ -13,11 +13,11 @@ $('#one').live('pageinit', function () {
         });
     };
 
-    $('#two').live('pageinit', function () {
+    $('#two').on('pageinit', function () {
         console.log("Page two loaded.");
     }); // end #two pageinit
 
-    $('#popup').live('pageinit', function () {
+    $('#popup').on('pageinit', function () {
         console.log("Popup page loaded.");
 
         // finds a link that has href="#one" and overrides the link action
